@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Quiz App</title>
+</head>
+<body>
+<!--<div class="main">-->
+<!--    <div class="question-count"></div>-->
+
+<div class="quiz-container" id="quiz">
+    <div class="start-end">
+        <div class="finish-block">
+            <div class="itog">
+                <div class="result-subject-title"></div>
+                <div class="finish-text">
+                    <p class="correct-finish-text"></p>
+                    <p class="border-finish">/</p>
+                    <p class="count-finish-text"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz-start-container">
+            <p class="start-text">Проверь свои знания бесплатно!</p>
+            <button class="startBtn">Начать бесплатный пробный тест</button>
+        </div>
+        <div class="choice-subject-container">
+            <p class="choice-subject-text">Выберите предмет</p>
+            <div class="choice-subject-btn-container">
+                <button class="choice-subject-btn" id="choice-english-btn">Английский язык</button>
+                <button class="choice-subject-btn" id="choice-biology-btn">Биология</button>
+            </div>
+        </div>
+    </div>
+    <div class="question-answer">
+        <div id="question-number"></div>
+        <div class="quiz-header">
+            <div class="question-block">
+                <h2 id="question">Question text</h2>
+            </div>
+            <div class="quiz-count-mob"></div>
+            <div class="quiz-block">
+                <div class="quiz-block-btn">
+                    <ul>
+                        <li>
+                            <input type="radio" name="answer" id="a" class="answer">
+                            <label for="a" id="a_text">Question</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="answer" id="b" class="answer">
+                            <label for="b" id="b_text">Question</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="answer" id="c" class="answer">
+                            <label for="c" id="c_text">Question</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="answer" id="d" class="answer">
+                            <label for="d" id="d_text">Question</label>
+                        </li>
+                    </ul>
+                    <p class="quiz-count"></p>
+                    <button id="submit">Следующий вопрос</button>
+                </div>
+            </div>
+            <button id="submit-mob">Следующий вопрос</button>
+        </div>
+    </div>
+
+</div>
+<!--</div>-->
+<script src="script.js"></script>
+</body>
+</html>
