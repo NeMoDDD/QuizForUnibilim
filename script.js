@@ -123,6 +123,7 @@ const questionCount = document.getElementsByClassName("question-count")[0];
 const finishCorrect = document.getElementsByClassName("correct-finish-text")[0];
 const finishCount = document.getElementsByClassName("count-finish-text")[0];
 const choiceSubjectContainer = document.getElementsByClassName("choice-subject-container")[0];
+const startEnd = document.getElementsByClassName("start-end")[0];
 const choiceEnglish = document.getElementById("choice-english-btn")
 const choiceBiology = document.getElementById("choice-biology-btn")
 const resultSubject = document.getElementsByClassName("result-subject-title")[0]
@@ -148,6 +149,7 @@ function loadQuiz() {
         questionNumber.innerHTML = "Вопрос №" + (currentQuiz+1)
         // questionCount.innerHTML = "Вопрос №" + currentQuiz
     } else {
+        startEnd.style.display = "flex"
         questionNumber.style.display = "none"
         quizHeader.style.display = "none"
         finishBlock.style.display = "flex"
@@ -239,5 +241,6 @@ choiceBiology.addEventListener("click", () => {
     quiz.style.display = "flex"
     questionAnswer.style.display = "block"
     choiceSubjectContainer.style.display = "none"
+    startEnd.style.display = "none"
     loadQuiz()
 })
